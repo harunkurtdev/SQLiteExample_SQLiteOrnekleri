@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etUpdateBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Başlık"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etUpdateIcerik"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/etUpdateBaslik"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="İçerik"
+        android:inputType="textMultiLine|textPersonName" />
+
+    <EditText
+        android:id="@+id/etUpdateTarih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUpdateIcerik"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Tarih"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUpdateTarih"
+        android:layout_alignParentStart="true"
+        android:text="Güncelle" />
+</RelativeLayout>
